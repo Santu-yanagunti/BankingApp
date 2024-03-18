@@ -28,7 +28,7 @@ pipeline {
                 sh 'docker version'
                 sh "docker build -t santuyanagunti/bankapp-eta-app:${BUILD_NUMBER} ."
                 sh 'docker image list'
-                sh "docker tag santuyanagunti/bankapp-eta-app:${BUILD_NUMBER} dprasaddevops/bankapp-eta-app:latest"
+                sh "docker tag santuyanagunti/bankapp-eta-app:${BUILD_NUMBER} santuyanagunti/bankapp-eta-app:latest"
             }
         }
         stage('Login2DockerHub and Push the Image') {
