@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
            // install the maven version configured as "M3" and add it to the path
-           maven 'maven3'
+           maven 'maven 3.6.3'
          }
 	environment {	
 		DOCKERHUB_CREDENTIALS=credentials('dockerloginid')
